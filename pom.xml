@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupid>SE</groupId>
+  <groupId>SE</groupId>
   <artifactId>OFOS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <pack>war</pack>
+  <packaging>war</packaging>
+
+
 
   <name>OFOS Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://localhost</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,9 +26,20 @@
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifiactId>
+      <artifactId>junit</artifactId>
       <version>4.13.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>8.0.30</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version> 
+        <scope>provided</scope>
     </dependency>
   </dependencies>
 
